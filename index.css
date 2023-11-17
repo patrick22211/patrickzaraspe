@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #022a30;
+}
+
+.navbar .nav-link{
+	color: white;
+}
+
+nav img{
+	width: 5%;
+	border-radius: 20px;
+}
+
+.new-page{
+	min-height: 100vh;
+	height: 100%;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	border-bottom: 2px solid darkcyan;
+}
+
+#landing h3{
+	border-bottom: 2px solid darkcyan;
+	padding-bottom: 6rem;
+}
+
+#contact div{
+	width: 50%;
+	margin-left: 10rem;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: 700;
+	color: white;
+	text-align: center;
+}
+
+img{
+	width: 20%;	
+	padding: 5px;
+}
+
+span{
+	font-size: 1rem;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+}
+
