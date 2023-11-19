@@ -3,66 +3,73 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Capstone1</title>
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+	<!-- Bootstrap Linking -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+	<!-- CSS linking -->
 	<link rel="stylesheet" type="text/css" href="./index.css">
 
-	<title>Capstone1</title>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-	<!-- Nav Bar -->
+	<!-- Nav Section -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<img src="./images/p logo.jpg">
-	  <a class="navbar-brand" href="#landing">Patrick Zaraspe</a>
-	  <a class="text-white">|</a>
-	  	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	  <a class="navbar-brand mr-5" href="#landing">Patrick Zaraspe</a>	
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=	"#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
-	  <div class="collapse navbar-collapse d-flex bg-dark" id="navbarNav">
-	    <ul class="navbar-nav d-grip gap-5">
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
 	      <li class="nav-item active">
-	      	 <a class="nav-link shadow-lg" href="#landing">Home</a>
+	        <a class="nav-link shadow-lg mx-5" href="#landing">Home</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link shadow-lg" href="#projects">Projects</a>
-	      </li>	
-	      <li class="nav-item">
-	        <a class="nav-link shadow-lg" href="#contact">Contact</a>
+	        <a class="nav-link shadow-lg mx-5" href="#projects">Projects</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link shadow-lg" href="#tools">Tools</a>
-	      </li>	
+	        <a class="nav-link shadow-lg mx-5" href="#contact">Contact</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link shadow-lg mx-5" href="#tools">Tools</a>
+	      </li>
 	    </ul>
 	  </div>
 	</nav>
 
 	<!-- Landing Section -->
 	<section id="landing">
-		<div class="d-flex justify-content-center p-5">
-			<img src="./images/Profile.jpg" class="mt-5 border p-3">
+		<div class="d-flex justify-content-center mt-5">
+			<img src="./images/Profile.jpg" class="mt-5">
 		</div>
-		<h1>Full Stack Web Developer</h1>
-		<h3>Thankyou for visiting my work!</h3>
+		<h1>Patrick Zaraspe</h1>
+		<h2>FULL STACK WEB DEVELOPER</h2>
+		<p>I`m Patrick Zaraspe and I`m a full stack web developer from Philippines</p>
 	</section>
 	<!-- End of Landing Section -->
 
-
 	<!-- Project Section-->
 	 <section id="projects" class="new-page">
-	 	<h1>My Projects</h1>
-	 	<div class="container-fluid w-100">
-			<div class="d-flex flex-row justify-content-around d-grip gap-5 mt-5">
-				<a href="./projects/1./index.html"><div><img src="./images/1.png" class="w-100 shadow-lg p-3"></div></a>
-				<a href="./projects/2./index.html"><div><img src="./images/2.png" class="w-100 shadow-lg p-3"></div></a>
-				<a href="./projects/3./index.html"><div><img src="./images/3.png" class="w-100 shadow-lg p-3"></div></a>
-			</div>
+	 	<h1 class="mb-5">My Projects</h1>
+	 	<div class="container-fluid">
 
-			<div class="d-flex flex-row justify-content-around d-grip gap-5 mt-5">
-				<a href="./projects/4./index.html"><div><img src="./images/4.png" class="w-100 shadow-lg p-3"></div></a>
-				<a href="./projects/5./index.html"><div><img src="./images/5.png" class="w-100 shadow-lg p-3"></div></a>
-				<a href="./projects/6./index.html"><div><img src="./images/6.png" class="w-100 shadow-lg p-3"></div></a>
+			<div class="d-flex row overflow-hidden mt-5">
+				<a href="./projects/1./index.html" target="_blank"><div class="col-md-6 col-lg-4"><h4 class="mt-5">CSS Bootstrap<h4><img src="./images/1.png" class="mb-5"></a></div>
+				<a href="./projects/2./index.html" target="_blank"><div class="col-md-6 col-lg-4"><h4 class="mt-5">Bootstrap Simple Styles<h4><img src="./images/2.png" class="mb-5"></a></div>
+				<a href="./projects/3./index.html" target="_blank"><div class="col-md-6 col-lg-4"><h4 class="mt-5">Bootstrap Grid System<h4><img src="./images/3.png" class="mb-5"></a></div>
+					<div class="w-lg-100"></div>
+				<a href="./projects/4./index.html" target="_blank"><div class="col-md-6 col-lg-4"><h4 class="mt-5">Bootstrap Flex<h4><img src="./images/4.png" class="mb-5"></a></div>
+				<a href="./projects/5./index.html" target="_blank"><div class="col-md-6 col-lg-4"><h4 class="mt-5">Bootstrap Layout<h4><img src="./images/5.png" class="mb-5"></a></div>
+				<a href="./projects/6./index.html" target="_blank"><div class="col-md-6 col-lg-4"><h4 class="mt-5">Bootstrap Components<h4><img src="./images/6.png"></a></div>
 			</div>
 		</div>
 	</section>
@@ -70,48 +77,62 @@
 
 	<!-- Contact Section -->
 	<section id="contact" class="new-page">
-	 	<h1>My Contact</h1>
-	 	<div class="d-flex flex-column d-grip gap-5 mt-5">
+	 	
+	 	<h1 class="mb-5">My Contact</h1>
+	 	<p>Feel free to contact me in any platform below</p>
+	 	
+	 	<div class="container">
+		 	
+		 	<div class="row text-center">
+				
+				<div 
+				class="col-lg-6"><a href="https://www.facebook.com/patrick22211" target="_blank"><img src="./images/fb.png" class="m-md-4 float-lg-right"></a>
+				</div>
+				
+				<div 
+				class="col-lg-6"><a href="https://www.facebook.com/patrick22211" target="_blank"><img src="./images/dc.png" class="float-lg-left"></a>
+				</div>
+				
+					<div class="w-lg-100"></div>
+				
+				<div 
+					class="col-lg-6"><a href="./images/number.png" class="w-20"><img src="./images/contact.png" class="m-md-4 float-lg-right">
+				</div></a>
+				
+				<div class="col-lg-6"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCBBSTkVzrMrJQjRxQqnJqSxfNGJkHSPNvXFHmtvCMQkPsdkDTSBtRDGfTXbKCtKPqsdvB" target="_blank"><img src="./images/email.png" class="m-md-4 float-lg-left">
+				</div></a>
 			
-			<div>
-				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png">
-				<a href="https://www.facebook.com/patrick22211"><span>Patrick Zaraspe</span></a>
 			</div>
-			
-			<div>
-				<img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png">
-				<span>mcarthur3092</span>
-			</div>
-			
-			<div>
-				<img src="https://icons-for-free.com/iconfiles/png/512/contact+mobile+phone+telephone+icon-1320168260690280424.png">
-				<span>+63 912 727 3349</span>
-			</div>
-			
-			<div>
-				<img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png">
-				<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCBBSTkVzrMrJQjRxQqnJqSxfNGJkHSPNvXFHmtvCMQkPsdkDTSBtRDGfTXbKCtKPqsdvB"><span>zaraspepatrick17@gmail.com</span></a>
-			</div>
+		
+
 		</div>
 	</section>
-	<!-- End of Contact Section -->
+	<!-- End of Contact Section -->	
 
-
-	<!-- Tools Section -->
+	<!-- Tools Section -->	
 	<section id="tools" class="new-page">
-	 	<h1>My currently tools for work</h1>
-		<div class="d-flex flex-row justify-content-around d-grip gap-5 mt-5">
-			<div><img src="./images/logo-bootstrap.png" class="w-100"><span>Bootstrap</span></div>
-			<div><img src="./images/logo-css3.png" class="w-100"><span>CSS</span></div>
-			<div><img src="./images/logo-git.png" class="w-100"><span>Git</span></div>
-			<div><img src="./images/logo-html5.png" class="w-100"><span>HTML</span></div>
-			<div><img src="./images/logo-sublime-text-3.png" class="w-100"><span>Sublime</span></div>
+	 	<h1>Tools</h1>
+	 	<p>This are the tools im currently using</p>	
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="col-lg-3 m-lg-1 col-md-6"><img src="./images/figma.webp"><h6>Figma</h6></div>
+				<div class="col-lg-3 m-lg-1 col-md-6"><img src="./images/logo-bootstrap.png"><h6>Bootstrap</h6></div>
+					<div class="w-md-100"></div>
+				<div class="col-lg-3 m-lg-1 col-md-6"><img src="./images/logo-css3.png"><h6>CSS</h6></div>
+					<div class="w-lg-100"></div>
+				<div class="col-lg-3 col-md-6"><img src="./images/logo-git.png"><h6>Git</h6></div>
+					<div class="w-lg-100"></div>
+				<div class="col-lg-3 m-lg-1 col-md-6"><img src="./images/logo-html5.png"><h6>HTML</h6></div>
+				<div class="col-lg-3 m-lg-1 col-md-6"><img src="./images/logo-sublime-text-3.png"><h6>Sublime</h6></div>
+			</div>
 		</div>
 	</section>
 	<!-- End of Tools Section -->
 
 
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>
