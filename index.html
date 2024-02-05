@@ -105,25 +105,25 @@
                 <div class="work">
                     <span><img src="images/frontend.jpg" alt="work1"><p>FRONT END</p></span>
                     <div class="layer">
-                        <h3>Front-end</h3>
+                        <h3>Old Portfolio</h3>
                         <p>Create a responsive portfolio using HTML, CSS, and Bootstrap</p>
-                        <a href="#">View Project</a>
-                    </div>
-                </div>
-                <div class="work">
-                    <span><img src="images/backend.png" alt="work2"><p>BACK END</p></span>
-                    <div class="layer">
-                        <h3>Back-end</h3>
-                        <p>E-commerce API - CRUD method JavaScript.</p>
-                        <a href="#">View Project</a>
+                        <a href="https://frontend-ruby-theta.vercel.app/" target="_blank">View Project</a>
                     </div>
                 </div>
                 <div class="work">
                     <span><img src="images/fullstack.png" alt="work3"><p>FULL STACK</p></span>
                     <div class="layer">
-                        <h3>Full-stack</h3>
-                        <p>Fully functioning e-commerce website powered by JavaScript.</p>
-                        <a href="#">View Project</a>
+                        <h3>E-Commerce Website</h3>
+                        <p>E-commerce API - CRUD method JavaScript.</p>
+                        <a href="http://zuitt-bootcamp-prod-335-6321-zaraspe.s3-website.us-east-1.amazonaws.com/" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <span><img src="images/ecommerce.jfif" alt="work2"><p>Full Stack</p></span>
+                    <div class="layer">
+                        <h3>2nd Ecommerce</h3>
+                        <p>In Progress...</p>
+                        <a href="#" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
@@ -172,12 +172,13 @@
                     <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" row="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -211,9 +212,28 @@
         }
 
         function closemenu () {
-            sidemenu.style.right = "-150px";
+            sidemenu.style.right = "-200px";
         }
 
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbztAxXTxEI8SOp-m0f8aljmkAhHtjeqONRMZZlKOxfDEKoP7SH54dQuO1NbyLUlaiEr-A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfuly"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
     </script>
 
 
